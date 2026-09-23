@@ -1,4 +1,7 @@
 # 140-websites
+
+https://cakiya.github.io/140-websites/
+
 websites i made for ISTE 140
 
 i was pretty proud of the RIT themeing i did back then :p
