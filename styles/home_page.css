@@ -1,0 +1,81 @@
+* {
+    max-width: 50rem;
+}
+
+h1, p, li { /* all text on the page */
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    z-index: 1;
+}
+
+a { /* all links */
+    color: darkorange;
+    text-decoration: none;
+}
+a:visited {color: orangered;}
+a:hover {color: blue;}
+a:active {color: lightblue;}
+
+
+img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    margin-left: 2rem;
+    padding: 0.1rem;    
+}
+
+.dashed_box{
+    border: 0.3rem solid darkorange;
+}
+
+/* 
+i spent way too long on this, now i see why RIT 
+website uses an image instead of css'ing it
+*/
+.border_box_outer_box {
+    margin-left: 2rem;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    display: flexbox;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    background-color: orange;
+    z-index: -1;
+}
+.border_box_inner_box {
+    width: 87.5%;
+    height: 87.5%;
+    background-color: white;
+    z-index: 0;
+}
+.border_box_tab {
+    width: 20%; /* Adjust the width as needed */
+    height: 60%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+.bordered_by_box {
+    padding-top: 0.75rem;
+    padding-left: 1.6rem;
+    color: black
+}
+
+.title_half_border{
+    max-width: 2.8rem;
+    padding-left: 0.5rem;
+    border-left: solid orange 0.3rem;
+    border-bottom: solid orange 0.3rem;
+}
+
+#cats_better_than_dogs{
+    font-family: cursive;
+}

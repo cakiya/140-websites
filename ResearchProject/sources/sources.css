@@ -1,0 +1,116 @@
+:root {
+    --RITorange: rgb(247,105,2);
+ }
+
+article > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article > div > p {
+    margin-left: 2%;
+}
+
+/* links */
+a:link {
+    text-decoration: none;
+    color: rgb(199, 83, 0);
+}   
+a:visited {
+    color: rgb(189, 73, 0);  
+}   
+a:hover {
+    color: var(--font-color);
+}
+a:active {
+    color: purple;
+}   
+
+/* Credit to https://stackoverflow.com/questions/8280716/full-screen-width-div-area */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: lightblue; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#Title-Bar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border-bottom: 1rem solid var(--RITorange);
+    margin-bottom: 2vh;
+    color: white;
+}
+
+#Nav-Bar {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+#Nav-Bar > a {
+    padding: 1vh 0.8vw;
+}
+
+#Content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 0vw 5vw;
+    max-width: 60rem;
+    flex-wrap: wrap;
+    /* background-color: lightblue; */
+}
+
+#Page-Title {
+    padding-bottom: 0.5rem;
+}
+
+article {
+    padding-bottom: 1rem;
+}
+
+.image-and-caption > img {
+    width: 80vw;
+    max-width: 25rem;
+    height: auto;
+    max-height: 40rem;
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-and-caption {
+    text-align: center;
+    font-style: italic;
+}
+
+
+img {
+    max-width: 20rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border-top: 2vh solid var(--RITorange);
+    margin-top: 2rem;
+    padding: 0vw 2vw;
+    color: white;
+}

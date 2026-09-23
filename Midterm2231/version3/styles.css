@@ -1,0 +1,198 @@
+/*Fonts and Color Variables */
+:root {
+   --RITorange: rgb(247,105,2);
+   --greygrey: rgb(52,51,54);
+   --darkwhite: rgb(200,200,200);
+   --header-color: white;
+   --bg-color: white;
+   --font-color: black;
+   --h1-color: black;
+   --h2-color: var(--RITorange);
+   --h3-color: var(--RITorange);
+   --link-color: rgb(199, 83, 0);
+   --font: helvetica;
+}
+/* hehe look its RIT orange from https://www.rit.edu/brandportal/colors */
+
+body {
+   color: var(--font-color);
+   background-color: var(--bg-color);
+   margin: 0;
+   font-family: var(--font);
+}
+p {
+    color: var(--font-color);
+    text-align: left;
+}
+h1 {
+   color: var(--h1-color);
+ }
+      
+h2 {
+   color: var(--h2-color);
+}
+h3 {
+    color: var(--h3-color);
+}
+a:link {
+    text-decoration: none;
+   color: var(--link-color);
+}   
+a:visited {
+   color: var(--h3-color);  
+}   
+a:hover {
+    color: var(--font-color);
+}
+a:active {
+   color: purple;
+}   
+/*Class Styles */
+* {
+    box-sizing: border-box;
+  }  
+  
+.header {
+    background-color: var(--header-color);
+    padding: 2px;
+    margin-top: 25px;
+    text-align: left;
+    font-size: larger;
+}
+
+.header h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header img {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+  /*Main Body Styling */
+  body {
+    margin: 10px;
+  }
+
+#topOrangeBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block !important;
+    box-sizing: border-box;
+    color: var(--RITorange);
+    background-color: var(--RITorange);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 24px;
+}
+/*Navigation Styling */
+.navigation {
+    overflow: hidden;
+    background-color: var(--header-color);
+}
+.navigation a {
+    float: left;
+    color: rgb(114, 117, 120);
+    text-align: center;
+    Margin-left: 20px;
+    padding: 16px 16px;
+  }
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+#itemName {
+    text-align: center;
+    font-size: 50px;
+}
+
+#description {
+    width: 100%;
+    color: var(--font-color);
+    text-align: left;
+    padding: 14px 16px;
+    padding-left: 80px;
+}
+
+#ourcompany {
+    width: 100%;
+    color: var(--font-color);
+    text-align: left;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#ourcompany h3 {
+    font-size: 40px;
+}
+
+#productimages {
+    /*float: right;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 100%;
+}
+
+#howitwasworn {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+#custsay {
+    width: 100%;
+    color: var(--font-color);
+    text-align: left;
+}
+
+#reviews {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+}
+
+#sayingAndReviews {
+    padding-right: 80px;
+}
+
+#contact {
+    width: 100%;
+    background-color: var(--bg-color);
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: left;
+}
+
+#contact h3 {
+    font-size: 40px;
+}
+
+/* columns */
+.allcolumns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    margin: 5px 0;
+}
+
+.column {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    /* &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; } */
+}
+
+.column #productimages {
+    margin: 50px;
+}

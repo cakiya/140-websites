@@ -1,0 +1,176 @@
+/*Fonts and Color Variables */
+:root {
+   --greygrey: rgb(52,51,54);
+   --darkwhite: rgb(200,200,200);
+   --header-color: var(--greygrey);
+   --bg-color: var(--greygrey);
+   --font-color: var(--darkwhite);
+   --h1-color: var(--darkwhite);
+   --h2-color: lightsalmon;
+   --h3-color: lightblue;
+   --link-color: purple;
+   --font: helvetica;
+}
+
+body {
+   color: var(--font-color);
+   background-color: var(--bg-color);
+   margin: 0;
+   font-family: var(--font);
+}
+p {
+    color: var(--font-color);
+    text-align: left;
+}
+h1 {
+   color: var(--h1-color);
+ }
+      
+h2 {
+   color: var(--h2-color);
+}
+h3 {
+    color: var(--h3-color);
+}
+a:link {
+   color: var(--link-color);  
+}   
+a:visited {
+   color: var(--h3-color);  
+}   
+a:hover {
+    color: var(--h3-color);
+}
+a:active {
+   color: purple;
+}   
+/*Class Styles */
+* {
+    box-sizing: border-box;
+  }  
+  
+.header {
+    background-color: var(--header-color);
+    padding: 2px;
+    text-align: center;
+    font-size: larger;
+    border-bottom: 5px solid #ddd;
+    border-radius: 4px;
+}
+
+.header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.header img {
+    margin-left: 20px;
+}
+
+  /*Main Body Styling */
+  body {
+    margin: 10px;
+  }
+/*Navigation Styling */
+.navigation {
+    overflow: hidden;
+    background-color: var(--header-color);
+    border-bottom: 5px solid #ddd;
+    border-radius: 4px;
+}
+.navigation a {
+    float: left;
+    color: var(--font-color);
+    text-align: center;
+    Margin-left: 20px;
+    padding: 16px 16px;
+  }
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+#description {
+    width: 100%;
+    color: var(--font-color);
+    text-align: left;
+    padding: 14px 16px;
+}
+
+#ourcompany {
+    width: 100%;
+    color: var(--font-color);
+    text-align: left;
+    padding: 14px 16px;
+    border-top: 5px solid #ddd;
+    border-radius: 4px;
+}
+
+#productimages {
+    /*float: right;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+    }
+
+#howitwasworn {
+    display: block;
+    border: 5px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+
+#custsay {
+    width: 100%;
+    color: var(--font-color);
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-right: 5px solid #ddd;
+    border-radius: 4px;
+}
+
+#reviews {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-left: 5px solid #ddd;
+    border-radius: 4px;
+}
+#contact {
+    width: 100%;
+    background-color: var(--bg-color);
+    padding: 20px;
+    text-align: left;
+    border-top: 5px solid #ddd;
+    border-radius: 4px;
+}
+
+/* columns */
+.allcolumns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    margin: 5px 0;
+}
+
+.column {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    /* &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; } */
+}
+
+.column #productimages {
+    margin: 50px;
+}
